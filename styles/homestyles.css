@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -54,6 +55,7 @@ nav {
 .nav-links a:hover {
     background-color: #555;
 }
+
 .home-cover {
     height: 90%;
     width: 100vw;
@@ -65,56 +67,60 @@ nav {
     justify-content: center;
     align-items: center;
 }
-.center-text{
+
+.center-text {
     padding: 2rem;
     color: black;
     font-size: xx-large;
-        background-color: azure;
+    background-color: azure;
 }
-.accuracy{
+
+.accuracy {
     padding: 2rem;
-        color:dimgrey;
-        background-color:beige;
-        font-size: xx-large;
+    color: dimgrey;
+    background-color: beige;
+    font-size: xx-large;
 }
-.compliance{
+
+.compliance {
     padding: 2rem;
-        color:darkslategray;
-        font-size: xx-large;
-        background-color: white;
+    color: darkslategray;
+    font-size: xx-large;
+    background-color: white;
 }
-.about-section{
+
+.about-section {
     height: 100vh;
     background-color: azure;
     padding: 2rem;
 }
+
 .about-image {
     max-width: 100%;
     height: 30rem;
     display: block;
     margin: 0 auto;
-            background-color: azure;
+    background-color: azure;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.about-title{
-        color:darkslategray;
-        font-size: x-large;
-        text-align: center;
-        background-color: azure;
-        padding: 1rem;
+
+.about-title {
+    color: darkslategray;
+    font-size: x-large;
+    text-align: center;
+    background-color: azure;
+    padding: 1rem;
 }
-.about-text{
+
+.about-text {
     font-size: large;
-    /* padding: 2rem; */
-    /* margin: 2rem; */
     line-height: 2rem;
     background-color: azure;
 }
-.our-vision-section{
-    height: 100%;
 
-    /* background-color: beige; */
+.our-vision-section {
+    height: 100%;
     padding: 4rem;
     padding-top: 0;
     display: flex;
@@ -122,26 +128,29 @@ nav {
     justify-content: center;
 }
 
-.vision-text{
+.vision-text {
     font-size: medium;
     padding: 1rem;
     text-align: center;
-    /* margin: 2rem; */
 }
-.vision-title{
+
+.vision-title {
     margin-top: 2rem;
- font-size: medium;
- color: dimgray;
+    font-size: medium;
+    color: dimgray;
 }
-.vision-paragraph{
+
+.vision-paragraph {
     padding: 2rem;
     padding-left: 0;
     font-size: larger;
 }
-.mission{
+
+.mission {
     display: flex;
     flex-direction: column;
 }
+
 .mission-title {
     margin-top: 2rem;
     padding: 2rem;
@@ -156,41 +165,116 @@ nav {
     font-size: larger;
     margin-left: 4rem;
 }
-.our-services{
-  padding: 2rem;
-  background-color: aliceblue;
+
+.our-services {
+    padding: 2rem;
+    background-color: aliceblue;
 }
-.service-text{
+
+.service-text {
     text-align: center;
     font-size: large;
 }
-.tax-consultancy{
+
+.tax-consultancy {
     display: flex;
     padding: 2rem;
     gap: 4rem;
 }
-.why-us{
+
+.why-us {
     background-color: beige;
     display: flex;
     gap: 3rem;
     flex-direction: column;
 }
-.why-us-text{
+
+.why-us-text {
     text-align: center;
-        font-size: large;
-        padding: 2rem;
+    font-size: large;
+    padding: 2rem;
 }
-.our-clients{
+
+.our-clients {
     background-color: honeydew;
     padding: 2rem;
 }
-.clients{
+
+.clients {
     display: flex;
     padding: 2rem;
     gap: 3rem;
     justify-content: space-around;
 }
-.client-testimonials{
+
+.client-testimonials {
     background-color: beige;
     padding: 2rem;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .home-cover {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .center-text,
+    .accuracy,
+    .compliance {
+        font-size: large;
+        padding: 1rem;
+    }
+
+    .about-section {
+        height: auto;
+    }
+
+    .about-image {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .our-vision-section {
+        padding: 2rem;
+    }
+
+    .tax-consultancy {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .tax-consultancy img {
+        max-width: 100%;
+    }
+
+    .why-us {
+        gap: 2rem;
+    }
+
+    .clients {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .clients img {
+        max-width: 45%;
+    }
 }
