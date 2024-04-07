@@ -72,13 +72,13 @@ nav {
     padding: 2rem;
     color: black;
     font-size: xx-large;
-    background-color: azure;
+    background-color: honeydew;
 }
 
 .accuracy {
     padding: 2rem;
     color: dimgrey;
-    background-color: beige;
+    background-color: honeydew;
     font-size: xx-large;
 }
 
@@ -91,7 +91,7 @@ nav {
 
 .about-section {
     height: 100vh;
-    background-color: azure;
+    background-color: honeydew;
     padding: 2rem;
 }
 
@@ -100,7 +100,7 @@ nav {
     height: 30rem;
     display: block;
     margin: 0 auto;
-    background-color: azure;
+    background-color: honeydew;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -109,14 +109,14 @@ nav {
     color: darkslategray;
     font-size: x-large;
     text-align: center;
-    background-color: azure;
+    background-color: honeydew;
     padding: 1rem;
 }
 
 .about-text {
     font-size: large;
     line-height: 2rem;
-    background-color: azure;
+    background-color: honeydew;
 }
 
 .our-vision-section {
@@ -126,6 +126,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: honeydew;
 }
 
 .vision-text {
@@ -168,7 +169,7 @@ nav {
 
 .our-services {
     padding: 2rem;
-    background-color: aliceblue;
+    background-color: honeydew;
 }
 
 .service-text {
@@ -183,7 +184,7 @@ nav {
 }
 
 .why-us {
-    background-color: beige;
+    background-color: honeydew;
     display: flex;
     gap: 3rem;
     flex-direction: column;
@@ -208,7 +209,7 @@ nav {
 }
 
 .client-testimonials {
-    background-color: beige;
+    background-color: honeydew;
     padding: 2rem;
 }
 
