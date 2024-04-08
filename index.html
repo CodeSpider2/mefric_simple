@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="./assets/mefric-icon.png"
+      href="./assets/mefric-white-icon.jpg"
       type="image/x-icon"
     />
 
@@ -17,6 +17,11 @@
     <nav>
       <div class="logo">
         <a href="#">Mefric</a>
+        <img
+          src="./assets/mefric-icon.png"
+          alt="mefric icon"
+          class="mefric-icon"
+        />
       </div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
@@ -192,12 +197,12 @@
 
       homeCover.style.transition = "background-position 2s ease";
       homeCover.style.backgroundImage = nextImage;
-      homeCover.style.backgroundPosition = "100% 0";
+      homeCover.style.backgroundPosition = "0% 0"; // Change from "100% 0" to "0% 0" to slide from left to right
 
       setTimeout(() => {
         homeCover.style.transition = "";
-        homeCover.style.backgroundPosition = "0 0";
-      }, 1000);
+        homeCover.style.backgroundPosition = "0% 0";
+      }, 2000); // Adjusted timeout to match the transition duration
     }
 
     setInterval(changeBackground, 4000);

@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #555;
-    color: #fff;
+    color: black;
+    /* Set default text color to black */
 }
 
 html {
@@ -14,14 +14,22 @@ body {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     height: 100vh;
+    background-color: #add8e6;
+    /* Light blue background color */
+}
+.mefric-icon{
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #666;
-    color: #fff;
+    background-color: #87ceeb;
+    /* Light blue background color */
     position: fixed;
     top: 0;
     z-index: 100;
@@ -29,19 +37,29 @@ nav {
     height: 60px;
     width: 100%;
 }
-
+.logo{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 0.5rem;
+}
 .logo a {
-    color: #fff;
+    color: black;
+    /* Set logo color to black */
+    
     text-decoration: none;
     font-size: 1.5rem;
-    background: #666;
+    background: #87ceeb;
+    /* Light blue background color */
     font-weight: bold;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-        background: #666;
+    background: #87ceeb;
+    /* Light blue background color */
 }
 
 .nav-links li {
@@ -49,16 +67,19 @@ nav {
 }
 
 .nav-links a {
-    color: #fff;
+    color: black;
+    /* Set nav link color to black */
     text-decoration: none;
     padding: 0.5rem;
-    background-color: #666;
+    background-color: #87ceeb;
+    /* Light blue background color */
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .nav-links a:hover {
-    background-color: #444;
+    background-color: #4682b4;
+    /* Darker shade of blue on hover */
 }
 
 .home-cover {
@@ -75,29 +96,30 @@ nav {
 
 .center-text {
     padding: 2rem;
-    color: black;
     font-size: xx-large;
-    background-color: honeydew;
+    background: linear-gradient(to bottom, white, #add8e6);
+    /* Gradient background */
 }
 
 .accuracy {
     padding: 2rem;
-    color: dimgrey;
-    background-color: honeydew;
     font-size: xx-large;
+    background: linear-gradient(to bottom, white, #add8e6);
+    /* Gradient background */
 }
 
 .compliance {
     padding: 2rem;
-    color: darkslategray;
     font-size: xx-large;
-    background-color: white;
+    background: linear-gradient(to bottom, white, #add8e6);    /* Light blue background color */
 }
 
 .about-section {
-    height: 100vh;
-    background-color: #555;
+    background: linear-gradient(to bottom, white, #add8e6);
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .about-image {
@@ -105,33 +127,35 @@ nav {
     height: 30rem;
     display: block;
     margin: 0 auto;
-    background-color: #555;
+    background: linear-gradient(to bottom, white, #add8e6);
+    /* Gradient background */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about-title {
-    color: white;
     font-size: x-large;
     text-align: center;
-    background-color: #555;
     padding: 1rem;
 }
 
 .about-text {
     font-size: large;
     line-height: 2rem;
-    background-color: #555;
+    padding: 2rem;
+    padding-top: 0%;
+    padding-bottom: 0%;
 }
 
 .our-vision-section {
-    height: 100%;
     padding: 4rem;
+    margin-top: 2rem;
     padding-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #555;
+    background: linear-gradient(to bottom, white, #add8e6);
+    /* Gradient background */
 }
 
 .vision-text {
@@ -141,9 +165,9 @@ nav {
 }
 
 .vision-title {
-    margin-top: 2rem;
     font-size: medium;
-    color: white;
+    color: black;
+    /* Set text color to black */
 }
 
 .vision-paragraph {
@@ -158,10 +182,10 @@ nav {
 }
 
 .mission-title {
-    margin-top: 2rem;
     padding: 2rem;
     font-size: medium;
-    color: white;
+    color: black;
+    /* Set text color to black */
     text-align: right;
 }
 
@@ -174,7 +198,8 @@ nav {
 
 .our-services {
     padding: 2rem;
-    background-color: #555;
+    background: linear-gradient(to bottom, white, #add8e6);
+    /* Gradient background */
 }
 
 .service-text {
@@ -189,7 +214,8 @@ nav {
 }
 
 .why-us {
-    background-color: #555;
+    background-color: #add8e6;
+    /* Light blue background color */
     display: flex;
     gap: 3rem;
     flex-direction: column;
@@ -202,7 +228,8 @@ nav {
 }
 
 .our-clients {
-    background-color: #555;
+    background: linear-gradient(to bottom, white, #add8e6);
+    /* Gradient background */
     padding: 2rem;
 }
 
@@ -214,16 +241,17 @@ nav {
 }
 
 .client-testimonials {
-    background-color: #555;
+    background-color: #add8e6;
+    /* Light blue background color */
     padding: 2rem;
 }
 
-.testimonial-images{
+.testimonial-images {
     width: 200px;
     height: 200px;
 }
-/* Responsive Styles */
 
+/* Responsive Styles */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
