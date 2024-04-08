@@ -176,6 +176,31 @@
   </body>
   <script>
     const navLinks = document.querySelectorAll(".nav-links a");
+    const backgroundImages = [
+      "url(./assets/financial-home.jpg)",
+      "url(./assets/highway-1.jpg)",
+      "url(./assets/highway-2.jpg)",
+      "url(./assets/highway-3.jpg)",
+    ];
+
+    const homeCover = document.querySelector(".home-cover");
+    let currentIndex = 0;
+
+    function changeBackground() {
+      currentIndex = (currentIndex + 1) % backgroundImages.length;
+      const nextImage = backgroundImages[currentIndex];
+
+      homeCover.style.transition = "background-position 2s ease";
+      homeCover.style.backgroundImage = nextImage;
+      homeCover.style.backgroundPosition = "100% 0";
+
+      setTimeout(() => {
+        homeCover.style.transition = "";
+        homeCover.style.backgroundPosition = "0 0";
+      }, 1000);
+    }
+
+    setInterval(changeBackground, 4000);
 
     navLinks.forEach((link) => {
       link.addEventListener("click", (e) => {

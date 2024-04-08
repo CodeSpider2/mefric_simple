@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #555;
+    color: #fff;
 }
 
 html {
@@ -18,7 +20,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #666;
     color: #fff;
     position: fixed;
     top: 0;
@@ -32,12 +34,14 @@ nav {
     color: #fff;
     text-decoration: none;
     font-size: 1.5rem;
+    background: #666;
     font-weight: bold;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
+        background: #666;
 }
 
 .nav-links li {
@@ -48,12 +52,13 @@ nav {
     color: #fff;
     text-decoration: none;
     padding: 0.5rem;
+    background-color: #666;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .nav-links a:hover {
-    background-color: #555;
+    background-color: #444;
 }
 
 .home-cover {
@@ -91,7 +96,7 @@ nav {
 
 .about-section {
     height: 100vh;
-    background-color: honeydew;
+    background-color: #555;
     padding: 2rem;
 }
 
@@ -100,23 +105,23 @@ nav {
     height: 30rem;
     display: block;
     margin: 0 auto;
-    background-color: honeydew;
+    background-color: #555;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about-title {
-    color: darkslategray;
+    color: white;
     font-size: x-large;
     text-align: center;
-    background-color: honeydew;
+    background-color: #555;
     padding: 1rem;
 }
 
 .about-text {
     font-size: large;
     line-height: 2rem;
-    background-color: honeydew;
+    background-color: #555;
 }
 
 .our-vision-section {
@@ -126,7 +131,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: honeydew;
+    background-color: #555;
 }
 
 .vision-text {
@@ -138,7 +143,7 @@ nav {
 .vision-title {
     margin-top: 2rem;
     font-size: medium;
-    color: dimgray;
+    color: white;
 }
 
 .vision-paragraph {
@@ -156,7 +161,7 @@ nav {
     margin-top: 2rem;
     padding: 2rem;
     font-size: medium;
-    color: dimgray;
+    color: white;
     text-align: right;
 }
 
@@ -169,7 +174,7 @@ nav {
 
 .our-services {
     padding: 2rem;
-    background-color: honeydew;
+    background-color: #555;
 }
 
 .service-text {
@@ -184,7 +189,7 @@ nav {
 }
 
 .why-us {
-    background-color: honeydew;
+    background-color: #555;
     display: flex;
     gap: 3rem;
     flex-direction: column;
@@ -197,7 +202,7 @@ nav {
 }
 
 .our-clients {
-    background-color: honeydew;
+    background-color: #555;
     padding: 2rem;
 }
 
@@ -209,7 +214,7 @@ nav {
 }
 
 .client-testimonials {
-    background-color: honeydew;
+    background-color: #555;
     padding: 2rem;
 }
 
