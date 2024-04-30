@@ -14,20 +14,39 @@
   </head>
 
   <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata");
+    </style>
     <nav>
       <div class="logo">
-        <a href="#">Mefric</a>
         <img
           src="./assets/mefric-icon.png"
           alt="mefric icon"
           class="mefric-icon"
         />
+        <a href="#">Mefric</a>
       </div>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#clients">Our Clients</a></li>
+        <li class="home">
+          <img src="/assets/home.svg" class="nav-icon" alt="home-icon" />
+          <a href="#home">Home</a>
+        </li>
+        <li class="home">
+          <img src="/assets/about.svg" class="nav-icon" alt="home-icon" />
+          <a href="#about">About</a>
+        </li>
+        <li class="home">
+          <img src="/assets/services.svg" class="nav-icon" alt="home-icon" />
+          <a href="#services">Services</a>
+        </li>
+        <li class="home">
+          <img src="/assets/contact.svg" class="nav-icon" alt="home-icon" />
+          <a href="#contact">Contact</a>
+        </li>
+        <li class="home">
+          <img src="/assets/clients.svg" class="nav-icon" alt="home-icon" />
+          <a href="#clients">Our Clients</a>
+        </li>
       </ul>
     </nav>
     <div class="home-cover" id="home">
@@ -178,6 +197,65 @@
         </div>
       </div>
     </div>
+    <div class="contact-section" id="contact">
+      <p class="service-text">CONTACT US</p>
+      <form class="contact-form">
+        <input
+          type="text"
+          placeholder="Your Name"
+          class="contact-input"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Your Email"
+          class="contact-input"
+          required
+        />
+        <textarea
+          placeholder="Your Message"
+          class="contact-input"
+          required
+        ></textarea>
+        <button type="submit" class="contact-btn">Send</button>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Mefric</h3>
+          <p>
+            Mefric Financial Consultants Ltd is a leading tax and accounting
+            firm dedicated to providing comprehensive financial solutions to
+            individuals and businesses.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Information</h3>
+          <p>Address: 123 Main Street, City, Country</p>
+          <p>Email: info@mefric.com</p>
+          <p>Phone: +123 456 789</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul class="social-links">
+            <li>
+              <a href="#"><img src="./assets/facebook.svg" alt="Facebook" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/x.svg" alt="X" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/insta.svg" alt="Instagram" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2024 Mefric Financial Consultants Ltd. All rights reserved.
+      </div>
+    </footer>
   </body>
   <script>
     const navLinks = document.querySelectorAll(".nav-links a");
